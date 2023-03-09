@@ -1,0 +1,10 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+};
+
+.card_labels {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+};
