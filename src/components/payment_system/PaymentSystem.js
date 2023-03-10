@@ -1,5 +1,5 @@
-export default class PaymentSystem{
-    constructor() {
+// export default class PaymentSystem {
+//   constructor() {
 
-    }
-}
+//   }
+// }
