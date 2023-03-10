@@ -1,6 +1,6 @@
 // TODO: write your code here
 import sum from './basic';
-import NumberCreditCard from '../components/NumberCreditCard';
+import NumberCreditCard from '../components/number_credit_card/NumberCreditCard';
 
 document.addEventListener('DOMContentLoaded', () => {
 /*

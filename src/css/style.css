@@ -1,10 +1,31 @@
 body, ul {
     margin: 0;
     padding: 0;
-};
+}
+
+/* Область ввода данных карты */
+
+.data_validation_row{
+    display: flex;
+    margin: 0 10px;
+}
 
 .card_labels {
-    background-color: aqua;
-    margin: 0;
-    padding: 0;
-};
+    display: flex;
+    list-style-type: none;
+}
+
+.card {
+    padding-left: 5px;
+}
+
+/* Область с результатами */
+
+.result_сolumn{
+    margin-left: 10px;
+}
+
+.valid_Luhn, .invalid_Luhn {
+    display: none;
+}
+

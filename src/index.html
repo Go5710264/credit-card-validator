@@ -14,24 +14,31 @@
     </header>
 
     <main>
-        <div>
+        <div class="data_validation_row">
+            <div class="input_data">
+                <h3>Check your credit card number</h3>
 
-            <h3>Check your credit card number</h3>
+                <ul class="card_labels">
+                    <li class="card">Visa</li>
+                    <li class="card">MasterCard</li>
+                    <li class="card">AmericanExpress</li>
+                    <li class="card">JCB</li>
+                    <li class="card">UnionPay</li>
+                    <li class="card">Mir</li>
+                </ul>
 
-            <ul class="card_labels">
-                <li>Visa</li>
-                <li>MasterCard</li>
-                <li>AmericanExpress</li>
-                <li>JCB</li>
-                <li>UnionPay</li>
-                <li>Mir</li>
-            </ul>
+                <form>
+                    <input type="text" placeholder="Credit card number" class="card_number">
+                    <button class="validation_check_button">Click to Validate</button>
+                </form>
+            </div>
 
-            <form>
-                <input type="text" placeholder="Credit card number" class="card_number">
-                <button>Click to Validate</button>
-            </form>
-
+            <div class="result_сolumn">
+                <h3>Luhn Algorithm Check</h3>
+                <p class="preparation">We'll check your number against the Luhn Algorithm to see if it is a valid credit card number.</p>
+                <p class="valid_Luhn">The credit card number you entered <strong>passed</strong> the Luhn Check and is therefore a valid credit card number!</p>
+                <p class="invalid_Luhn">The credit card number you entered <strong>failed</strong> the Luhn Check. It's not valid, did you make a typo?</p>
+            </div>
         </div>
     </main>
 </body>
