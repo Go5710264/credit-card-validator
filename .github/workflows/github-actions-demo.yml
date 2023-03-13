@@ -1,4 +1,4 @@
-name: projectName
+name: credit-card-validator
 
 on: [push, pull_request]
 

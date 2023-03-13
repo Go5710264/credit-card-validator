@@ -53,7 +53,7 @@ export default class NumberCreditCard {
   }
 
   // нужно перенести в другой компонент
-  static lohnAlgorithm(setValue) {
+  lohnAlgorithm(setValue) {
     let ch = 0;
     const num = String(setValue).replace(/\D/g, '');
     // заменить в строке все нецифры на пустые промежутки
