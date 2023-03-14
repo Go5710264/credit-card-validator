@@ -1,6 +1,7 @@
 // TODO: write your code here
 import sum from './basic';
 import NumberCreditCard from '../components/number_credit_card/NumberCreditCard';
+import PaymentSystem from '../components/payment_system/PaymentSystem';
 
 document.addEventListener('DOMContentLoaded', () => {
 /*
@@ -11,4 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('worked');
   console.log(sum([1, 2]));
   new NumberCreditCard();
+  new PaymentSystem();
 });

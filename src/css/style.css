@@ -1,13 +1,18 @@
 body, ul {
     margin: 0;
     padding: 0;
+    font: normal normal 15px Helvetica;
+}
+
+.data_validation_row{
+    display: flex;
+    margin: 0 25px;
 }
 
 /* Область ввода данных карты */
 
-.data_validation_row{
-    display: flex;
-    margin: 0 10px;
+.input_data {
+    width: 50%;
 }
 
 .card_labels {
@@ -17,29 +22,45 @@ body, ul {
 }
 
 .card {
-    /* padding-left: 5px; */
     width: 17%;
     height: 32px;
     text-align: center;
-    /* opacity: 0.3; */
+}
+
+.hide_card {
+    opacity: 0.3;
 }
 
 .img {
     max-width: 100%;
 }
 
+.input_number {
+    margin: 10px 0;
+}
+
 .card_number {
     box-sizing: border-box;
-    width: 135px;
+    width: auto;
 }
 
 /* Область с результатами */
 
 .result_сolumn{
-    margin-left: 10px;
+    /* margin-left: 100px; */
+    width: 50%;
+
 }
 
-.valid_Luhn, .invalid_Luhn {
+/* .valid_Luhn, .invalid_Luhn {
+} */
+
+.showBlock {
+    display: block;
+}
+
+.hideBlock {
     display: none;
 }
+
 

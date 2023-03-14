@@ -1,62 +1,34 @@
-// import PaymentSystem from '../payment_system/PaymentSystem';
+import InteractionDOM from '../interaction_DOM/InteractionDOM';
 
 export default class NumberCreditCard {
   constructor() {
     this.validateCard = this.validateCard.bind(this);
-    this.iconDisplay = this.iconDisplay.bind(this);
-    // Фиксация контента 
+    // Фиксация контента
 
     this.cardNumber = document.querySelector('.card_number');
     // Доступ к полю со значением карты
-    this.cardNumber.addEventListener('input', this.iconDisplay)
 
     this.validationCheckButton = document.querySelector('.validation_check_button');
     // Доступ к кнопке ввода
     this.validationCheckButton.addEventListener('click', this.validateCard);
     // Подписка на событие ввода (клик на кнопку ввода)
-  }
 
-  iconDisplay() { // отображение иконки карты
-    const firstNumberCard = +this.cardNumber.value[0];
-    // Доступ к первому числу карты
-    const nextNumberCard = +this.cardNumber.value[1];
-    // Доступ ко второму числу карты
-
-    if (firstNumberCard === 1 || (firstNumberCard === 3 && nextNumberCard === 5)) {
-      // JCB
-      console.log('JCB');
-    } else if (firstNumberCard === 2) {
-      // MIR
-      console.log('MIR');
-    } else if (firstNumberCard === 3 && nextNumberCard === 0 || (firstNumberCard === 3 && nextNumberCard === 6)) {
-      // Diners Club
-      console.log('Diners Club');
-    } else if (firstNumberCard === 3) {
-      // American Express
-      console.log('american express');
-    } else if (firstNumberCard === 4) {
-      // Visa
-      console.log('visa');
-    } else if (firstNumberCard === 5) {
-      // MasterCard
-      console.log('mastercard');
-    } else if (firstNumberCard === 6) {
-      // Discover
-      console.log('Discover');
-    } else { console.log('хз че за карта'); }
+    this.passDOM = new InteractionDOM();
+    // создание экземпляра класса для взаимодействия с DOM
   }
 
   validateCard(e) {
     e.preventDefault();
     // отмена действия браузера по умолчанию (перегрузка страницы)
 
-    console.log(this.lohnAlgorithm(this.cardNumber.value));
-    this.iconDisplay();
+    this.passDOM.calculationLuhn(this.lohnAlgorithm(this.cardNumber.value));
+    // валидация по алгоритму Луна и отправка результатов в DOM
+
     return false;
   }
 
   // нужно перенести в другой компонент
-  lohnAlgorithm(setValue) {
+  static lohnAlgorithm(setValue) {
     let ch = 0;
     const num = String(setValue).replace(/\D/g, '');
     // заменить в строке все нецифры на пустые промежутки
@@ -67,7 +39,7 @@ export default class NumberCreditCard {
     if (num === '') { return false; }
     // если передается путая строка вернуть false
 
-    for (let i = 0; i < num.length; i = i + 1) {
+    for (let i = 0; i < num.length; i += 1) {
       let n = parseInt(num[i], 10);
       // из массива строк вывести числовое значение
 
