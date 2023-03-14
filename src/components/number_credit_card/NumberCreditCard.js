@@ -3,15 +3,17 @@
 export default class NumberCreditCard {
   constructor() {
     this.validateCard = this.validateCard.bind(this);
-    // Фиксация контента из-за setTimeout
+    this.iconDisplay = this.iconDisplay.bind(this);
+    // Фиксация контента 
 
     this.cardNumber = document.querySelector('.card_number');
     // Доступ к полю со значением карты
+    this.cardNumber.addEventListener('input', this.iconDisplay)
 
     this.validationCheckButton = document.querySelector('.validation_check_button');
-    // Доступ к кнопке
+    // Доступ к кнопке ввода
     this.validationCheckButton.addEventListener('click', this.validateCard);
-    // Подписка на событие ввода (каждая клавиша)
+    // Подписка на событие ввода (клик на кнопку ввода)
   }
 
   iconDisplay() { // отображение иконки карты
@@ -26,7 +28,7 @@ export default class NumberCreditCard {
     } else if (firstNumberCard === 2) {
       // MIR
       console.log('MIR');
-    } else if (firstNumberCard === 3 && nextNumberCard === 0) {
+    } else if (firstNumberCard === 3 && nextNumberCard === 0 || (firstNumberCard === 3 && nextNumberCard === 6)) {
       // Diners Club
       console.log('Diners Club');
     } else if (firstNumberCard === 3) {
@@ -50,6 +52,7 @@ export default class NumberCreditCard {
 
     console.log(this.lohnAlgorithm(this.cardNumber.value));
     this.iconDisplay();
+    return false;
   }
 
   // нужно перенести в другой компонент
@@ -64,7 +67,7 @@ export default class NumberCreditCard {
     if (num === '') { return false; }
     // если передается путая строка вернуть false
 
-    for (let i = 0; i < num.length; i + 1) {
+    for (let i = 0; i < num.length; i = i + 1) {
       let n = parseInt(num[i], 10);
       // из массива строк вывести числовое значение
 

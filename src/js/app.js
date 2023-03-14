@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('worked');
   console.log(sum([1, 2]));
-  const valueCard = new NumberCreditCard();
+  new NumberCreditCard();
 });

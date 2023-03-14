@@ -1,29 +1,15 @@
-<a href="https://www.flaticon.com/ru/free-icons/" title="виза иконки">Виза иконки от Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/ru/free-icons/" title="виза иконки">Виза иконки от Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/american-express" title="american express icons">American express icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/american-express" title="american express icons">American express icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/jcb" title="jcb icons">Jcb icons created by Freepik - Fla
-<a href="https://www.flaticon.com/free-icons/jcb" title="jcb icons">Jcb icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/diners-club" title="diners club icons">Diners club icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/diners-club" title="diners club icons">Diners club icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/discover" title="discover icons">Discover icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/discover" title="discover icons">Discover icons created by Freepik - Flaticon</a>
-<a target="_blank" href="https://icons8.com/icon/59239/мир">МИР</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icon/xE8OPEhwLzRB/мир">МИР</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
-
 ```text
 
 Project Name: credit-card-validator
 
-Usage Terms: The images used in this project are sourced from https://www.freeimages.com/ and are subject to the terms and conditions of the FreeImages License Agreement.
+Usage Terms: The images used in this project are sourced from https://www.freeimages.com/, https://www.flaticon.com/, https://icons8.com/ and are subject to the terms and conditions of the FreeImages License Agreement.
 
 License Agreement: The FreeImages License Agreement allows for non-commercial use of the images and requires attribution to the author and source of the image.
 
-Attribution: All images used in this project from https://www.freeimages.com/ must be attributed to their respective authors and the website.
+Attribution: All images used in this project from https://www.freeimages.com/, https://www.flaticon.com/, https://icons8.com/ must be attributed to their respective authors and the website.
 
 Commercial Use: Commercial use of the images is prohibited without obtaining a separate license from the author or the website.
 
-Date: [insert date]
+Date: 13.3.2023
 
 ```
