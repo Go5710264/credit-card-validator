@@ -4,21 +4,32 @@ body, ul {
     font: normal normal 15px Helvetica;
 }
 
+header{
+    margin: 20px;
+}
+
+.header_title{
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
 .data_validation_row{
     display: flex;
-    margin: 0 25px;
+    padding: 0 150px;
 }
 
 /* Область ввода данных карты */
 
 .input_data {
     width: 50%;
+    padding: 10px 20px;
 }
 
-.card_labels {
-    display: flex;
-    list-style-type: none;
-    width: 250px;
+.main_title_card{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 .card {
@@ -27,16 +38,36 @@ body, ul {
     text-align: center;
 }
 
+.card_labels {
+    display: flex;
+    list-style-type: none;
+    width: 250px;
+}
+
+.input_number {
+    margin: 0;
+}
+
+.card_number{
+    padding: 6px 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+.validation_check_button{
+    padding: 6px 12px;
+    background-color: #4cb35e;
+    border: 1px solid #4cb35de6;
+    border-radius: 4px;
+    color:aliceblue;
+}
+
 .hide_card {
     opacity: 0.3;
 }
 
 .img {
     max-width: 100%;
-}
-
-.input_number {
-    margin: 10px 0;
 }
 
 .card_number {
@@ -49,11 +80,9 @@ body, ul {
 .result_сolumn{
     /* margin-left: 100px; */
     width: 50%;
+    padding: 10px 20px;
 
 }
-
-/* .valid_Luhn, .invalid_Luhn {
-} */
 
 .showBlock {
     display: block;
@@ -61,6 +90,12 @@ body, ul {
 
 .hideBlock {
     display: none;
+}
+
+.points_with_results{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 

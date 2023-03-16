@@ -9,14 +9,14 @@
 <body>
 
     <header>
-        <h1>Validate Credit Card Numbers</h1>
-        <h2>Check a credit card number with our online checker!</h2>
+        <h1 class="header_title">Validate Credit Card Numbers</h1>
+        <h2 class="header_title">Check a credit card number with our online checker!</h2>     
     </header>
 
     <main>
         <div class="data_validation_row">
             <div class="input_data">
-                <h3>Check your credit card number</h3>
+                <h3 class="main_title_card">Check your credit card number</h3>
 
                 <ul class="card_labels">
                     <li class="card"><img src="../src/picture/visa.png" alt="Visa" title="Visa" class="img"></li>
@@ -35,19 +35,31 @@
             </div>
 
             <div class="result_сolumn">
-                <h3>Luhn Algorithm Check</h3>
-                <p class="preparation luhnAlgorithm">We'll check your number against the Luhn Algorithm to see if it is a valid credit card number.</p>
-                <p class="valid_Luhn luhnAlgorithm hideBlock">The credit card number you entered <strong>passed</strong> the Luhn Check and is therefore a valid credit card number!</p>
-                <p class="invalid_Luhn luhnAlgorithm hideBlock">The credit card number you entered <strong>failed</strong> the Luhn Check. It's not valid, did you make a typo?</p>
+                <div>
+                    <h3 class="points_with_results">Luhn Algorithm Check</h3>
+                    <p class="preparation luhnAlgorithm">We'll check your number against the Luhn Algorithm to see if it is a valid credit card number.</p>
+                    <p class="valid_Luhn luhnAlgorithm hideBlock">The credit card number you entered <strong>passed</strong> the Luhn Check and is therefore a valid credit card number!</p>
+                    <p class="invalid_Luhn luhnAlgorithm hideBlock">The credit card number you entered <strong>failed</strong> the Luhn Check. It's not valid, did you make a typo?</p>
+                </div>
                 
-                <h3>Major Industry Identifier</h3>
-                <p class="preparation">The first digit of a credit card number represent the category of entity which issued the card.</p>
+                <div>
+                    <h3 class="points_with_results industry_identifier">Major Industry Identifier</h3>
+                    <p class="preparation default_InId">The first digit of a credit card number represent the category of entity which issued the card.</p>
+                    <p class="valid_InId hideBlock">This credit card number belongs to the <strong>Banking and financial</strong>  industry.</p>
+                </div>
+                
+                <div>
+                    <h3 class="points_with_results">Issuer identification number</h3>
+                    <p class="preparation">The first six digits of a card number identify the institution that issued the card to the card holder.</p>
+                    <p class="valid_Luhn luhnAlgorithm hideBlock">This credit card's issuer is <strong class="card_name">Visa</strong>.</p>
+                </div>
+                
+                <div>
+                    <h3 class="points_with_results">Personal Account Number</h3>
+                    <p class="preparation">Digits 7 to final number minus 1 (the last is the checksum) indicate the individual account identifier.</p>
+                    <p class="valid_Luhn luhnAlgorithm hideBlock">This credit card's issuer is <strong class="card_name">Visa</strong>.</p>
+                </div>
 
-                <h3>Issuer identification number</h3>
-                <p class="preparation">The first six digits of a card number identify the institution that issued the card to the card holder.</p>
-            
-                <h3>Personal Account Number</h3>
-                <p class="preparation">Digits 7 to final number minus 1 (the last is the checksum) indicate the individual account identifier.</p>
             </div>
 
         </div>

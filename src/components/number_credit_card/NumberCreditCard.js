@@ -21,6 +21,12 @@ export default class NumberCreditCard {
     e.preventDefault();
     // отмена действия браузера по умолчанию (перегрузка страницы)
 
+    if (this.cardNumber.value.trim() === '') {
+      this.passDOM.emptyInputField();
+
+      return false;
+    }
+
     this.passDOM.calculationLuhn(this.lohnAlgorithm(this.cardNumber.value));
     // валидация по алгоритму Луна и отправка результатов в DOM
 
@@ -28,7 +34,7 @@ export default class NumberCreditCard {
   }
 
   // нужно перенести в другой компонент
-  static lohnAlgorithm(setValue) {
+  lohnAlgorithm(setValue) {
     let ch = 0;
     const num = String(setValue).replace(/\D/g, '');
     // заменить в строке все нецифры на пустые промежутки
@@ -43,9 +49,13 @@ export default class NumberCreditCard {
       let n = parseInt(num[i], 10);
       // из массива строк вывести числовое значение
 
+      // eslint-disable-next-line
       ch += (isOdd | 0) === (i % 2) && (n *= 2) > 9 ? (n - 9) : n;
+
     }
 
-    return (ch % 10) === 0;
+    this.lohnAlgorithmResult = (ch % 10) === 0;
+
+    return this.lohnAlgorithmResult;
   }
 }
