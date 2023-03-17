@@ -7,9 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 весь код приложения внутри обработчика
 данного события начнет работать после загрузки DOM
 */
-  const numberCreditCard = new NumberCreditCard();
-  numberCreditCard;
+  new NumberCreditCard();
 
-  const paymentSystem = new PaymentSystem();
-  paymentSystem;
+  new PaymentSystem();
 });

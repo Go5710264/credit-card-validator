@@ -10,6 +10,7 @@
         "error",
         "LabeledStatement",
         "WithStatement"
-      ]
+      ],
+      "no-new": 0
     }
   }

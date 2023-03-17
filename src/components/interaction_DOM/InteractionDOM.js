@@ -133,9 +133,11 @@ export default class InteractionDOM {
     return this.failElement;
   }
 
+  /* eslint-disable */
   removeErrors() { // Удаление элементов с ошибкой ввода
     Array.from(document.querySelectorAll('.fail')).forEach((item) => {
       item.parentElement.removeChild(item);
     });
   }
+  /* eslint-enable */
 }
